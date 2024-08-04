@@ -11,6 +11,13 @@ pipeline {
             }
         }
     }
+     stages {
+        stage('maven buiild cases') {
+            steps {
+                echo 'mvn clean build'
+            }
+        }
+    }
 }
 
 
